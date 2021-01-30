@@ -1,0 +1,156 @@
+$margin: 0 auto;
+$blue: #3D7AA8;
+$blue_dark:#193A53;
+$green_light:#9EE3E4;
+$green:#3DC7C9;
+
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../assets/fonts/Montserrat-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  background-color:white;
+  margin: 0 auto;
+  color: $blue_dark;
+}
+.wrapper{
+  margin: $margin;
+  font-family: 'Montserrat';
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px 15px ;
+}
+
+h1 {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 61px;
+}
+h2 {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+}
+h3 {
+  font-family: "Montserrat-Bold";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%; 
+  text-align: center;
+}
+
+body,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+
+li {
+  list-style-type: none; 
+}
+
+%flex_line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%flex_column {
+  @extend %flex_line;
+  flex-direction: column;
+}
+@mixin flex_line () {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin flex_column () {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+a, button {
+  list-style: unset;
+  text-decoration: none;
+  color: white;
+  margin: 8px;
+  cursor: pointer;
+  transition: all 0.6s;
+  line-height: initial;
+  outline: none;
+}
+
+.btn_border {
+  color: $green_light ;
+  border: 1px solid $green_light ;
+  border-radius: 55px;
+  padding: 10px;
+}
+
+.btn_green {
+  background-color: $green ;
+  border: 1px solid $green ;
+  border-radius: 55px;
+  padding: 10px;
+}
+
+a:hover, button:hover {
+  color: $blue_dark;
+  font-weight: bold;
+}
+
+.btn_border:hover {
+  background-color: $green ;
+  color: white;
+  font-weight: normal;
+}
+
+.btn_green:hover {
+  background-color: white ;
+  color: $green;
+  border-color: $green;
+}
+
+@media screen and (max-width:600px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 16px; 
+  }
+  .wrapper {
+    font-size: 16px;
+  }
+}
