@@ -1,1 +1,1 @@
-https://AlexK321.github.io/launch_your_product
+https://AlexK321.github.io/Launch_your_product
