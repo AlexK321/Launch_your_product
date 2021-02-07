@@ -5,11 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Launch your product</title>
-<<<<<<< HEAD
-  <meta name="description" content="Launch your product">
-=======
   <meta name="description" content="Launch your product in fast and effective way!">
->>>>>>> 922d122c9f714bcc95eca64dba5ce54e451b7a9b
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -22,11 +18,11 @@
           </a>
           <div class="nav">
             <nav class="mobile_menu navigation " >
-              <a href="#">Who we are</a>
-              <a href="#">How we do</a>
-              <a href="#">Our Expertise</a>
-              <a href="#">Services</a>
-              <a href="#">Projects</a>
+              <a href="#whoWeAre">Who we are</a>
+              <a href="#howWeDo">How we do</a>
+              <a href="#ourExpertise">Our Expertise</a>
+              <a href="#letsStart">Services</a>
+              <a href="#letsStart">Projects</a>
             </nav>
             <div class="check_container">
               <div id="radios">
@@ -44,7 +40,7 @@
                 </label>
               </div>
             </div>
-            <a type="button" class=" mobile_menu btn_border btn_get_quote ">Get a quote</a>   
+            <a href="#letsStart" type="button" class=" mobile_menu btn_border btn_get_quote ">Get a quote</a>   
           </div>
           <a type="button" id="openMenu" class="btn_mobile_menu">
             <img src="./assets/images/header/button_menu.png" class="" alt="">
@@ -62,8 +58,8 @@
               <b>We develop and deliver MVP</b> for your new project within <b>2 months</b>, covering all stages: analysis, planning, designing, development and deployment/delivery!
             </p>
             <div class="btn_block">
-              <a type="button" >How we do that?</a>
-              <a type="button" class="btn_green">Get a quote</a>
+              <a href="#howWeDo" type="button" >How we do that?</a>
+              <a href="#letsStart" type="button" class="btn_green">Get a quote</a>
             </div>
           </div>
           <div class="img_header">
@@ -82,7 +78,7 @@
       </div>
     </header>   
     <main>  
-      <section class="we_are_company">
+      <section class="we_are_company" id="whoWeAre">
         <div class="container">
           <h2>We are COMPANY NAME</h2>
           <div class="description" id="aboutCompany">
@@ -150,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section class="what_we_do">
+      <section class="what_we_do" >
         <div class="container">
           <h2>What we do</h2>
           <div class="card_block">
@@ -318,62 +314,62 @@
           </div>
         </div>
       </section>
-      <section class="our_expertise">
+      <section class="our_expertise" id="ourExpertise">
         <div class="container">
           <h2>Our expertise</h2>
           <div class="card_block">
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d01.png" alt="">
-              </a>
+              </div>
               <h3>
                 Marketing
               </h3>
             </div>
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d02.png" alt="">
-              </a>
+              </div>
               <h3>
                 Chat-bots
               </h3>
             </div>   
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d03.png" alt="">
-              </a>
+              </div>
               <h3>
                 Education
               </h3>
             </div>   
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d04.png" alt="">
-              </a>
+              </div>
               <h3>
                 E-commerce
               </h3>
             </div>   
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d05.png" alt="">
-              </a>
+              </div>
               <h3>
                 Retail
               </h3>
             </div>   
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d06.png" alt="">
-              </a>
+              </div>
               <h3>
                 Non-commerce
               </h3>
             </div>   
             <div class="card">
-              <a class="image_block_card">  
+              <div class="image_block_card">  
                 <img src="./assets/images/main/d07.png" alt="">
-              </a>
+              </div>
               <h3>
                 Trading
               </h3>
@@ -478,7 +474,7 @@
           </div>
         </div>
       </section>
-      <section class="how_we_work">
+      <section class="how_we_work" id="howWeDo">
         <div class="container">
           <h2>How we work</h2>
           <div class="description_for_desktop">
@@ -614,39 +610,42 @@
           </div>      
         </div>
       </section>
-      <section class="lets_start">
+      <section class="lets_start" id="letsStart">
         <div class="container">
           <div class="row">
             <h2>Let's start a project!</h2>
             <p class="description">
               Feel free to contact us in any way displayed below. We will answer in at most 8 hours after your request.
-            </p>
-            <div class="mail_block">
-              <img src="./assets/images/main/mail.png" class="" alt="">
+            </p>    
+            <a href="#" class="mail_block">
               <p>
-                info@example.com
+                &#9993; info@example.com
               </p>
-            </div>
+            </a>                  
           </div>
           <form action="">
             <div class="row_form">
-              <input class="form-control" placeholder="Name" >
-              <input class="form-control" placeholder="Company" >
-              <input class="form-control" placeholder="Details" >
-            </div>
-            <div class="row_form">
-              <input class="form-control" placeholder="E-mail" >
-              <input class="form-control" placeholder="Country" >
-              <input class="form-control" placeholder="" >
+              <div class="column_form">
+                <input class="form-control" placeholder="Name" >
+                <input class="form-control" placeholder="E-mail" >
+              </div>
+              <div class="column_form">
+                <input class="form-control" placeholder="Company" >
+                <input class="form-control" placeholder="Country" >
+              </div>
+              <div class="column_form">
+                <textarea cols="30" rows="10" class="form-control details" placeholder="Details"></textarea>
+                
+              </div>
             </div>
             <div class="row_form row_for_mobile">
               <div class="blank"></div>
-              <div class="load_file" >
-                <img src="./assets/images/main/file.png" class="" alt="">
+              <a class="load_file" >
+                <div class="icon_file"></div>
                 <p>
                   No file attached
                 </p>
-              </div>
+              </a>
               <div >
                 <p>
                   Max, size is 15 MB
@@ -662,7 +661,7 @@
       <div class="container">
         <div class="row">
           <a href="../index.html" class="logo " style="font-size:40px">
-            LOGO COMPANY
+            LOGO 
           </a>
           <nav class="nav">
             <a class="nav-link active" href="#">Careers</a>

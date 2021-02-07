@@ -53,7 +53,7 @@ h2 {
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
-  line-height: 49px;
+  line-height: 35px;
   text-align: center;
 }
 h3 {
@@ -140,7 +140,7 @@ a:hover, button:hover {
   border-color: $green;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
   h1 {
     font-size: 35px;
   }
